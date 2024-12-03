@@ -1,0 +1,18 @@
+﻿<Window x:Class="INotifyPropertyChangedInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:INotifyPropertyChangedInterface"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <StackPanel>
+        <Label Content="Zahl1"/>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Nummer1, Mode=TwoWay}" />
+        <Label Content="Zahl2"/>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Nummer2, Mode=TwoWay}" />
+        <Label Content="Summeme"/>
+        <TextBox Width="100" Height="30" Text="{Binding Path=Ergebnis, Mode=TwoWay}" />
+
+    </StackPanel>
+</Window>
